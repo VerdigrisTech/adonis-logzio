@@ -1,0 +1,33 @@
+{
+  "name": "@verdigris/adonis-logzio",
+  "version": "0.1.0",
+  "description": "Logz.io transporter for AdonisJs logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerdigrisTech/adonis-cassandra.git"
+  },
+  "keywords": [
+    "cassandra",
+    "adonis",
+    "database",
+    "provider"
+  ],
+  "author": "Andrew Jo <andrew@verdigris.co>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/VerdigrisTech/adonis-cassandra/issues"
+  },
+  "homepage": "https://github.com/VerdigrisTech/adonis-cassandra#readme",
+  "devDependencies": {
+    "@adonisjs/fold": "^4.0.8"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "winston": "^2.4.2",
+    "winston-logzio": "^1.0.7"
+  }
+}
