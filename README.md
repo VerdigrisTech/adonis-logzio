@@ -42,7 +42,7 @@ module.exports = {
 ```
 
 Further configuration options are available here:
-[https://app.logz.io/#/dashboard/data-sources/nodejs-winston](https://app.logz.io/#/dashboard/data-sources/nodejs-winston)
+[https://github.com/logzio/winston-logzio](https://github.com/logzio/winston-logzio)
 
 ## License
 
