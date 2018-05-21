@@ -4,6 +4,7 @@
   "description": "Logz.io transporter for AdonisJs logger",
   "main": "index.js",
   "scripts": {
+    "postmerge": "scripts/update-dependencies.sh",
     "precommit": "lint-staged",
     "test": "test"
   },
