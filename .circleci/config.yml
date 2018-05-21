@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  publish:
+    docker:
+      - image: node:8.11-alpine
+
+    working_directory: ~/adonis-logzio
+
+    steps:
+      - checkout
+
+      - run:
+          name: Set npm token
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+
+      - run:
+          name: Publish package to npmjs.com
+          command: npm publish
+
+workflows:
+  version: 2
+  release:
+    jobs:
+      - publish:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /v\d+(\.\d+){0,2}/
