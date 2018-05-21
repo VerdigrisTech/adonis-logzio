@@ -9,6 +9,11 @@ jobs:
     steps:
       - checkout
 
+      - restore_cache:
+          keys:
+            - v1-npm-deps-{{ checksum "package.json" }}
+            - v1-npm-deps
+
       - run:
           name: Install dependencies
           command: npm install
@@ -16,6 +21,10 @@ jobs:
       - run:
           name: Run ESLint
           command: node_modules/.bin/eslint .
+
+      - save_cache:
+          keys:
+            - v1-npm-deps-{{ checksum "package.json" }}
 
   publish:
     docker:
