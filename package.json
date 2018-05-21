@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/VerdigrisTech/adonis-cassandra#readme",
   "devDependencies": {
-    "@adonisjs/fold": "^4.0.8"
+    "@adonisjs/fold": "^4.0.8",
+    "eslint-plugin-promise": "^3.7.0"
   },
   "dependencies": {
     "lodash": "^4.17.10",
