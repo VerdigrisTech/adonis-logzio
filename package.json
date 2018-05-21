@@ -1,6 +1,6 @@
 {
   "name": "@verdigris/adonis-logzio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Logz.io transporter for AdonisJs logger",
   "main": "index.js",
   "scripts": {
