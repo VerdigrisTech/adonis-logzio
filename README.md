@@ -1,5 +1,8 @@
 # adonis-logzio
 
+[![Package version](https://img.shields.io/npm/v/@verdigris/adonis-logzio.svg)](https://www.npmjs.com/package/@verdigris/adonis-logzio)
+[![License](https://img.shields.io/npm/l/@verdigris/adonis-logzio.svg)](https://github.com/VerdigrisTech/adonis-logzio/blob/master/LICENSE)
+
 Logz.io logger provider for AdonisJs.
 
 This package allows Logz.io as the transporter of your logs. It is intended for
