@@ -11,7 +11,7 @@ use with AdonisJs framework.
 adonis install @verdigris/adonis-logzio
 
 # yarn users
-adonis install @verdigris/adonis-logzio
+adonis install @verdigris/adonis-logzio --yarn
 ```
 
 Next step is to register the provider as shown below:
