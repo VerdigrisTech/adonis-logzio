@@ -1,5 +1,18 @@
 version: 2
 jobs:
+  lint:
+    docker:
+      - image: circleci/node:8.11
+
+    working_directory: ~/adonis-logzio
+
+    steps:
+      - checkout
+
+      - run:
+          name: Run ESLint
+          command: node_modules/.bin/eslint .
+
   publish:
     docker:
       - image: circleci/node:8.11
@@ -19,6 +32,9 @@ jobs:
 
 workflows:
   version: 2
+  develop:
+    jobs:
+      - lint
   release:
     jobs:
       - publish:
