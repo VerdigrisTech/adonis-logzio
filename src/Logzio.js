@@ -2,7 +2,7 @@
 
 const _ = require('lodash');
 const Winston = require('winston');
-const logzioWinstonTransport = require('winston-logzio');
+require('winston-logzio');
 
 class Logzio {
   setConfig(config) {
