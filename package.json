@@ -4,6 +4,7 @@
   "description": "Logz.io transporter for AdonisJs logger",
   "main": "index.js",
   "scripts": {
+    "precommit": "lint-staged",
     "test": "test"
   },
   "repository": {
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@adonisjs/fold": "^4.0.8",
     "eslint-plugin-promise": "^3.7.0",
+    "husky": "^0.14.3",
     "lint-staged": "^7.1.2"
   },
   "dependencies": {
